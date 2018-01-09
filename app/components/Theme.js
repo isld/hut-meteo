@@ -1,9 +1,12 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import BootstrapStyle from '../styles/vendor/bootstrap.min.css';
+import Nav from "./Layout/Nav";
 
 const Theme = ({ children }) => (
     <div>
-        <style dangerouslySetInnerHTML={{ __html: BootstrapStyle }} />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css" />
+        <Nav />
         {children}
     </div>
 );
